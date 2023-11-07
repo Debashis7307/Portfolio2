@@ -352,6 +352,7 @@ background: linear-gradient(95deg, rgba(44,84,175,1) 0%, rgba(1,1,13,1) 40%);
     min-height: auto;
     padding-bottom: 6rem;
     padding-left: 12rem;
+    overflow:hidden;
 }
 .education-box p span{
     /* color: rgb(36, 154, 227); */
@@ -466,9 +467,20 @@ transition: .5s;
     width: 100%;
 }
 
+.education-content-1, .education-content-2, .education-content-3{
+    overflow:hidden;
+}
+
 .skills{
     padding-top: 72px;
+    overflow: hidden;
    
+}
+.skill-left{
+    overflow: hidden;
+}
+.skill-right{
+    overflow:hidden;
 }
 .skill-main span{
     color:#0ef;
@@ -495,6 +507,7 @@ transition: .5s;
     text-align: center;
     padding-bottom:30px;
 }
+
 .skill-left .skill-bar .info{
     display: flex;
     justify-content: space-between;
