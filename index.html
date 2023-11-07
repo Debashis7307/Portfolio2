@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Devfolio | Explorer & Learner</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
    
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -17,7 +19,7 @@
     <!-- HEADER SECTION -->
     
     <header class="header">
-      <div class="logo"><span class="img"><img src="photo5.png" alt="my_about_pic"></span><span>D</span>evfolio.</div>
+      <div class="logo" ><span class="img"><img src="photo5.png" alt="my_about_pic"></span><span>D</span>evfolio.</div>
 
       <nav class="navbar">
         <a href="#home" style="--i:1"class="active">Home</a>
@@ -135,7 +137,7 @@
 
 <!-- ABOUT SECTION -->
   
-    <section id="about" class="about">
+    <section id="about" class="about" data-aos="fade-up-right" data-aos-duration="3000">
       <div class="about_image">
       <div class="img-about">
         <img src="photo5.png" alt="my_about_pic">
@@ -225,7 +227,8 @@
      <h1 class="heading">My <span> Journey</span></h1>
      <h2 class="ead">Education</h2>
           <div class="education-box">
-            <div class="education-content-1" >
+            <div class="education-content-1" data-aos="flip-left"
+            data-aos-duration="3000" >
               <div class="content-1">
                 <div class="year"><i class='bx bxs-calendar'></i> 2017 - 2020</div>
                 <h2>Secondary Education</h2>
@@ -233,7 +236,7 @@
               </div>
             </div>
 
-            <div class="education-content-2">
+            <div class="education-content-2" data-aos="flip-right" data-aos-duration="3000" >
               <div class="content-2">
                 <div class="year"><i class='bx bxs-calendar'></i> 2020 - 2022</div>
                 <h2>Higher-Secondary Education</h2>
@@ -241,7 +244,8 @@
               </div>
             </div>
 
-            <div class="education-content-3">
+            <div class="education-content-3" data-aos="flip-left"
+            data-aos-duration="3000">
               <div class="content-3">
                 <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2026</div>
                 <h2>Bachelor of Technology</h2>
@@ -256,7 +260,8 @@
     <section id="skills" class="skills">
       <h2 class="heading">My <span> Skills</span></h2>
       <div class="skill-main">
-        <div class="skill-left">
+        <div class="skill-left" data-aos="fade-right"
+         data-aos-duration="3000">
           <h3>Technical Skills</h3>
           <div class="skill-bar">
             <div class="info">
@@ -319,11 +324,11 @@
           </div>
 
         </div>
-        <div class="skill-right">
+        <div class="skill-right" data-aos="fade-left" data-aos-duration="3000">
           <h3>Professional Skills</h3>
           <div class="porfessional">
             <div class="box">
-              <div class="circle" data-dots="70" data-precent="95"></div>
+              <div class="circle" data-dots="70" data-percent="95"></div>
                 <div class="text">
                   <big>95%</big>
                   <small>Adaptability</small>
@@ -331,7 +336,7 @@
             </div>
 
             <div class="box">
-              <div class="circle" data-dots="70" data-precent="85"></div>
+              <div class="circle" data-dots="70" data-percent="85"></div>
                 <div class="text">
                   <big>85%</big>
                   <small>Creativity</small>
@@ -339,7 +344,7 @@
             </div>
 
             <div class="box">
-              <div class="circle" data-dots="70" data-precent="75"></div>
+              <div class="circle" data-dots="70" data-percent="75"></div>
                 <div class="text">
                   <big>75%</big>
                   <small>Team Work</small>
@@ -347,7 +352,7 @@
             </div>
 
             <div class="box">
-              <div class="circle" data-dots="70" data-precent="80"></div>
+              <div class="circle" data-dots="70" data-percent="80"></div>
                 <div class="text">
                   <big>80%</big>
                   <small>Communication</small>
@@ -355,7 +360,7 @@
             </div>
 
             <div class="box">
-              <div class="circle" data-dots="70" data-precent="90"></div>
+              <div class="circle" data-dots="70" data-percent="90"></div>
                 <div class="text">
                   <big>90%</big>
                   <small>Project Management</small>
@@ -369,5 +374,9 @@
       </div>
     </section>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
