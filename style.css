@@ -342,7 +342,6 @@ body {
     align-items: center;
     gap: 1.5rem;
     height: 120vh; */
-<<<<<<< Updated upstream
     padding-top: 70px;
     display: flex;
     justify-content: center;
@@ -352,17 +351,6 @@ body {
     padding-bottom: 6rem;
     padding-left: 12rem;
     overflow:hidden;
-=======
-  padding-top: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: auto;
-  padding-bottom: 6rem;
-  padding-left: 12rem;
-  overflow: hidden;
->>>>>>> Stashed changes
 }
 .education-box p span {
   /* color: rgb(36, 154, 227); */
@@ -475,7 +463,6 @@ body {
   width: 100%;
 }
 
-<<<<<<< Updated upstream
 .education-content-1, .education-content-2, .education-content-3{
     overflow:hidden;
 }
@@ -493,13 +480,6 @@ body {
 }
 .skill-main span{
     color:#0ef;
-=======
-.skills {
-  padding-top: 72px;
-}
-.skill-main span {
-  color: #0ef;
->>>>>>> Stashed changes
 }
 .skill-main {
   width: 100%;
@@ -520,20 +500,13 @@ body {
   text-align: center;
   padding-bottom: 30px;
 }
-<<<<<<< Updated upstream
 
 .skill-left .skill-bar .info{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-=======
-.skill-left .skill-bar .info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
->>>>>>> Stashed changes
+
 }
 .skill-left .skill-bar .bar {
   width: 100%;
