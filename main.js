@@ -63,3 +63,7 @@ circles.forEach(elem=>{
         pointsMarked[i].classList.add('marked')
     }
 })
+
+const currentYear = new Date().getFullYear();
+document.getElementById('year').innerHTML = currentYear;
+

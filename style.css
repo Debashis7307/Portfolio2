@@ -833,3 +833,19 @@ body {
   font-size: 1.5rem;
   transition: .5s ease;
 }
+
+/* Break Points */
+
+@media(max-width:425px){
+  .home{
+    flex-direction: column;
+    margin-top: 130px;
+  }
+  .home-content h3{
+    font-size: 20px;
+  }
+  .home-content h1{
+    font-size: 32px;
+  }
+  
+}
