@@ -42,7 +42,7 @@ window.onscroll = () => {
     // sticky header
     let header = document.querySelector('header');
 
-    header.classList.toggle('sticky', window.scrollY > 50);
+    header.classList.toggle('sticky', window.scrollY >5);
 }
 ////////// skill circle //////////
 const circles = document.querySelectorAll('.circle');
@@ -67,3 +67,11 @@ circles.forEach(elem=>{
 const currentYear = new Date().getFullYear();
 document.getElementById('year').innerHTML = currentYear;
 
+//toggle icon navbar///
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.onclick = ()=>{
+    menuIcon.classList.toggle("bx-x");
+    navlist.classList.toggle("open");
+}
