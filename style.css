@@ -836,7 +836,7 @@ body {
 
 /* Break Points */
 
-@media(max-width:425px){
+@media(max-width:426px){
   .home{
     flex-direction: column;
     margin-top: 130px;
@@ -844,8 +844,31 @@ body {
   .home-content h3{
     font-size: 20px;
   }
+  .home-content P{
+    font-size: 15px;
+  }
+  .home-content .home-sci{
+    font-size: 5px;
+  }
+  .home-sci a{
+    margin-right: 5px;
+  }
   .home-content h1{
     font-size: 32px;
   }
-  
+  .home-content{
+    text-align: center;
+  }
+  /* .home_image{
+    
+  } */
 }
+.home-content .btn-box a{
+  margin-top: 15px;
+}
+.about{
+  grid-auto-flow: column;
+  margin-top: 330px;
+  grid-template-rows: repeat(2, 1fr)
+}
+
