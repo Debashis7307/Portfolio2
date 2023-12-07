@@ -27,7 +27,7 @@ body {
   /* background: #081b29; */
   background: rgb(44, 84, 175);
   background: linear-gradient(
-    95deg,
+    94deg,
     rgba(44, 84, 175, 1) 0%,
     rgba(1, 1, 13, 1) 40%
   );
@@ -837,6 +837,13 @@ body {
 /* Break Points */
 
 @media(max-width:426px){
+  body{
+    background: linear-gradient(
+    91deg,
+    rgba(44, 84, 175, 1) 0%,
+    rgba(1, 1, 13, 1) 40%
+  );
+  }
   .home{
     flex-direction: column;
     margin-top: 130px;
@@ -862,8 +869,8 @@ body {
   /* .home_image{
     
   } */
-  .home-content .btn-box a{
-    margin-top: 15px;
+  .home-content .btn-box{
+    margin-top: 8px;
   }
   .about{
     /* grid-auto-flow: column;
@@ -874,11 +881,27 @@ body {
     margin-top: 130px;
 
   }
+  .about .about_image{
+    display:none;
+  }
+  .about .about-content{
+   transform: translateX(0px);
+   margin-top: 150px;
+   font-size: 18px;
+   padding: 15px;
+  }
   .skill-main{
     display: flex;
     flex-direction: column;
     margin-top: 70px;
     margin-left: -15px;
+  }
+  .education{
+    margin-top: 70px;
+    transform: translateX(0px);
+  }
+  .footer{
+    padding: 25px 10%;
   }
 }
 @media(max-width:768px) {
