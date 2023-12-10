@@ -878,7 +878,7 @@ body {
     grid-template-rows: repeat(2, 1fr) */
     display: flex;
     flex-direction: column;
-    margin-top: 130px;
+    margin-top: 150px;
 
   }
   .about .about_image{
@@ -897,8 +897,31 @@ body {
     margin-left: -15px;
   }
   .education{
-    margin-top: 70px;
+    flex-direction: column;
+    margin-top: 120px;
+    
     transform: translateX(0px);
+  }
+  .education .heading {
+    transform: translateX(-95px);
+  }
+  .ead{
+    transform: translateX(-95px);
+  }
+  .education-box .education-content-1{
+    padding-left: 13rem;
+  padding-right: 25em;
+  }
+  .education-box .education-content-2{
+    padding-left: 13rem;
+  padding-right: 25em;
+  }
+  /* .education-box .education-content-3{
+    padding-left: 1rem;
+  padding-right: 25em;
+  } */
+  .contact{
+    margin-top: 5px;
   }
   .footer{
     padding: 25px 10%;
