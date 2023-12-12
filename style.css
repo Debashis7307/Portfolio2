@@ -870,9 +870,12 @@ body {
   .home-content{
     text-align: center;
   }
-  /* .home_image{
-    
-  } */
+  .home_image{
+    padding-top: 20px;
+  }
+  .liquid-shape{
+    margin-top: 10px;
+  }
   .home-content .btn-box{
     margin-top: 8px;
   }
