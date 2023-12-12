@@ -412,6 +412,7 @@ body {
   padding-left: 2rem;
   padding-right: 47rem;
   overflow:hidden;
+  padding-bottom: 3rem;
 }
 .education-content-3 .content-3 {
   position: relative;
@@ -899,32 +900,44 @@ body {
   .education{
     flex-direction: column;
     margin-top: 120px;
-    
+    padding-left: 0px;
     transform: translateX(0px);
   }
   .education .heading {
     transform: translateX(-95px);
+    padding-left: 13rem;
   }
   .ead{
     transform: translateX(-95px);
+    padding-left: 13rem;
   }
   .education-box .education-content-1{
-    padding-left: 13rem;
-  padding-right: 25em;
+    padding-left: 2rem;
+  padding-right: 2em;
   }
   .education-box .education-content-2{
-    padding-left: 13rem;
-  padding-right: 25em;
+    padding-left: 2rem;
+  padding-right: 2em;
   }
-  /* .education-box .education-content-3{
-    padding-left: 1rem;
-  padding-right: 25em;
-  } */
+  .education-box .education-content-3{
+    padding-left: 2rem;
+  padding-right: 2rem
+  }
   .contact{
     margin-top: 5px;
   }
+  .footer p{
+    /* padding: 25px 10%; */
+    font-size: 12px;
+    text-align: center;
+  }
   .footer{
-    padding: 25px 10%;
+    padding: 8px;
+    flex-wrap: nowrap;
+
+  }
+  .footer-icon a i{
+    font-size: 1rem;
   }
 }
 @media(max-width:768px) {
