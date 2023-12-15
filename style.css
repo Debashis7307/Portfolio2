@@ -935,7 +935,7 @@ body {
     grid-template-rows: repeat(2, 1fr) */
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     margin-bottom: -130px;
   }
   .about-content h2 {
