@@ -167,3 +167,10 @@ darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
 }
+
+//menu icone
+let menuOpenBtn = document.querySelector("#menu-icon .navbar");
+let navLink = document.querySelector(".navbar")
+menuOpenBtn.addEventListener("click", ()=>{
+    navLink.style.left="-100%";
+})
