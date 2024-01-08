@@ -121,7 +121,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   left: -5%;
-  font-family: "Sofia", sans-serif;
+  font-family: 'Alex Brush', cursive;
 }
 .navbar a {
   display: inline-block;
@@ -263,6 +263,7 @@ body {
 .logo span {
   color: #0ef;
   font-size: 40px;
+  font-family: 'Alex Brush', cursive;
 }
 #menu-icon {
   font-size: 1.8rem;
