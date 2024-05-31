@@ -6,42 +6,6 @@ var typed = new Typed(".text",{
     loop: true
 });
 
-// /////////////  Active menu ////////////
-// let menuLi = document.querySelectorAll('header ul li a');
-// let section = document.querySelectorAll('section');
-
-// function activeMenu(){
-//     let len = section.length;
-//     while(--len && window.scrollY + 97 < section[len].offsetTop){}
-//     menuLi.forEach(sec => sec.classList.remove("active"));
-//     menuLi[len].classList.add("active");
-// }
-
-// activeMenu();
-// window.addEventListener("scroll",activeMenu);
-
-// scroll sections
-
-// window.onscroll = () => {
-//     sections.forEach(sec => {
-//         let top = window.screenY;
-//         let offset = sec.offsetTop - 150;
-//         let height = sec.offsetHeight;
-//         let id = sec.getAttribute('id');
-
-//         if(top >= offset && top < offset + height){
-//             //active navbar links
-//             navLinks.forEach(links =>{
-//                 links.classList.remove('active');
-//                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-//             });
-//         }
-//     });
-//     // sticky header
-//     let header = document.querySelector('header');
-
-//     header.classList.toggle('sticky', window.scrollY >5);
-// }
 ////////// skill circle //////////
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem=>{
@@ -65,51 +29,7 @@ circles.forEach(elem=>{
 const currentYear = new Date().getFullYear();
 document.getElementById('year').innerHTML = currentYear;
 
-// //toggle icon navbar///
-// let menuIcon = document.querySelector("#menu-icon");
-// let navlist = document.querySelector(".navlist");
 
-// menuIcon.onclick = ()=>{
-//     menuIcon.classList.toggle("bx-x");
-//     navlist.classList.toggle("open");
-// }
-
-
-// let menuIcon = document.querySelector('#menu-icon');
-// let navbar = document.querySelector('.navbar');
-
-// menuIcon.onclick = () => {
-//     menuIcon.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// }
-
-
-// let sections = document.querySelectorAll('section')
-// let navLinks = document.querySelectorAll('header nav a')
-
-// window.onscroll = () => {
-//     sections.forEach(sec => {
-//         let top = window.scrollY;
-//         let offset = sec.offsetTop - 150;
-//         let height = sec.offsetHeight;
-//         let id = sec.getAttribute('id');
-
-//         if(top >= offset && top < offset + height){
-//             navLinks.forEach(links => {
-//                 links.classList.remove('active');
-//                 document.querySelector('header nav a[href*=' +id+ ']').classList.add('active');
-//             })
-//         }
-//     });
-
-
-// let header = document.querySelector('.header');
-// header.classList.toggle('sticky',window.scrollY > 100);
-
-// menuIcon.classList.remove('bx-x');
-// navbar.classList.remove('active');
-
-// };
 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -174,3 +94,46 @@ let navLink = document.querySelector(".navbar")
 menuOpenBtn.addEventListener("click", ()=>{
     navLink.style.left="-100%";
 })
+
+//Contact JS
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const form = document.getElementById('contact-form');
+//     const popup = document.getElementById('popup');
+
+//     form.addEventListener('submit', (event) => {
+//         event.preventDefault(); // Prevent the default form submission
+
+//         // Get form data
+//         const fullName = form.fullName.value;
+//         const email = form.email.value;
+//         const mobileNumber = form.mobileNumber.value;
+//         const subject = form.subject.value;
+//         const message = form.message.value;
+
+//         // Send email using EmailJS
+//         emailjs.send('service_qetshai', 'template_yp313hh', {
+//             fullName: fullName,
+//             email: email,
+//             mobileNumber: mobileNumber,
+//             subject: subject,
+//             message: message
+//         })
+//         .then((response) => {
+//             console.log('SUCCESS!', response.status, response.text);
+//             showPopup('Successfully sent!');
+//             form.reset(); // Clear the form
+//         }, (error) => {
+//             console.error('FAILED...', error);
+//             showPopup('Failed to send message.');
+//         });
+//     });
+
+//     function showPopup(message) {
+//         popup.textContent = message;
+//         popup.classList.add('show');
+//         setTimeout(() => {
+//             popup.classList.remove('show');
+//         }, 3000); // Hide the popup after 3 seconds
+//     }
+// });
