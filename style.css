@@ -154,6 +154,12 @@ body {
   align-items: center;
   padding: 70px 10% 0;
   z-index: 3;
+  transition: background-position 5s ease-in;
+  background-image: url("sun.png");
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
+  background-attachment: fixed; 
+  background-size: 80px 80px;
 }
 .home-content {
   max-width: 500px;
@@ -406,11 +412,6 @@ body {
   padding-bottom: 60px;
 }
 .education {
-  /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
-    height: 120vh; */
     padding-top: 70px;
     display: flex;
     justify-content: center;
@@ -420,6 +421,11 @@ body {
     padding-bottom: 6rem;
     padding-left: 12rem;
     overflow:hidden;
+    background-image: url("sun.png");
+  background-repeat: no-repeat;
+  background-position: 51.5% 15%;
+  background-attachment: fixed; 
+  background-size: 80px 80px;
 }
 .education-box p span {
   /* color: rgb(36, 154, 227); */
@@ -903,6 +909,7 @@ body {
   .home{
     flex-direction: column;
     margin-top: 100px;
+    background-image: none;
   }
   .home-content h3{
     font-size: 20px;
@@ -970,11 +977,12 @@ body {
   }
   .education{
     margin-top: 170px;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding-bottom: 0px;
     padding-top: 70px;
     padding-left: 0px;
     transform: translateX(0px);
+    background-image: none;
   }
   .education .heading {
     transform: translateX(-9px);
@@ -1081,6 +1089,9 @@ section {
     float: left;
     margin-top: 30px;
     margin-right: 100px;
+  }
+  .education{
+    flex-wrap: wrap;
   }
   /* .navbar {
     display: flex;

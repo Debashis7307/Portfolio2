@@ -6,6 +6,7 @@ var typed = new Typed(".text",{
     loop: true
 });
 
+
 ////////// skill circle //////////
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem=>{
